@@ -10,7 +10,7 @@ dependencies:
   - ipykernel
   - ipywidgets
   # Data / ML
-  - numpy
+  - "numpy<2"
   - pandas
   - matplotlib
   - seaborn

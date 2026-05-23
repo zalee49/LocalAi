@@ -30,6 +30,8 @@ data/*.h5
 data/*.hdf5
 data/*.zip
 data/*.tar.gz
+data/cifar10/
+data/mnist/
 
 # ML model files (often gigabytes)
 models/
