@@ -62,7 +62,8 @@ LocalAI/
 │   ├── 01_classical_ml/    ← Start here: pandas + scikit-learn
 │   ├── 02_deep_learning/   ← Neural networks with PyTorch
 │   ├── 03_computer_vision/ ← Images and visual AI
-│   └── 04_local_llms/      ← Run LLMs locally with Ollama
+│   ├── 04_local_llms/      ← Run LLMs locally with Ollama
+│   └── 05_projects/        ← Hands-on projects (see below)
 ├── scripts/
 │   └── ollama_chat.py      ← Terminal chat with your local model
 ├── data/                   ← Put small datasets here
@@ -97,3 +98,15 @@ Notebook outputs are saved in `.ipynb` files — they'll sync automatically.
 4. `notebooks/02_deep_learning/01_pytorch_intro.ipynb` — understand neural networks
 5. `notebooks/03_computer_vision/01_image_basics.ipynb` — work with images
 6. `notebooks/04_local_llms/02_simple_rag.ipynb` — build a simple RAG pipeline
+
+## Projects
+
+| # | Project | Type | Dataset | Size |
+|---|---------|------|---------|------|
+| 01 | [MNIST CNN](notebooks/05_projects/01_mnist/mnist_cnn.ipynb) | Deep Learning | Handwritten digits | 70k images |
+| 02 | [Titanic](notebooks/05_projects/02_titanic/titanic.ipynb) | Classical ML | Passenger survival | 891 rows |
+| 03 | [Hospital Readmission](notebooks/05_projects/03_readmission/hospital_readmission.ipynb) | Classical ML | Diabetes patient records | 100k rows |
+| 04 | [Bank Marketing](notebooks/05_projects/04_bank_marketing/bank_marketing.ipynb) | Classical ML | Term deposit campaigns | 45k rows |
+| 05 | [Covertype](notebooks/05_projects/05_covertype/covertype.ipynb) | Classical ML | Forest cover types | 581k rows |
+| 06 | [Network Intrusion](notebooks/05_projects/06_network_intrusion/network_intrusion.ipynb) | Classical ML | Network traffic | 2.9M rows |
+| 07 | [CIFAR-100](notebooks/05_projects/07_cifar100/cifar100_cnn.ipynb) | **Deep Learning** | 100-class color images | 60k images |
