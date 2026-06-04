@@ -112,3 +112,4 @@ Notebook outputs are saved in `.ipynb` files — they'll sync automatically.
 | 07 | [CIFAR-100](notebooks/05_projects/07_cifar100/cifar100_cnn.ipynb) | **Deep Learning** | 100-class color images | 60k images |
 | 08 | [IMDB Sentiment](notebooks/05_projects/08_imdb_sentiment/imdb_sentiment.ipynb) | **NLP** | Movie review sentiment | 50k reviews |
 | 09 | [Text Generation](notebooks/05_projects/09_text_generation/text_generation.ipynb) | **NLP** | Shakespeare character-level LM | ~5MB text |
+| 10 | [Mini GPT](notebooks/05_projects/10_mini_gpt/mini_gpt.ipynb) | **Deep Learning** | GPT from scratch | ~5MB text |

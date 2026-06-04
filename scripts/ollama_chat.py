@@ -29,7 +29,13 @@ def check_ollama():
 
 
 def list_models():
-    response = requests.get(f"{OLLAMA_URL}/api/tags")
+    try:
+        response = requests.get(f"{OLLAMA_URL}/api/tags")
+        response.raise_for_status()
+    except (requests.exceptions.ConnectionError, requests.exceptions.RequestException):
+        print("Error: Could not fetch model list from Ollama.")
+        print("Start it with: ollama serve")
+        sys.exit(1)
     models = response.json().get("models", [])
     if not models:
         print("No models downloaded. Run: ollama pull llama3.2:3b")
@@ -46,6 +52,7 @@ def stream_chat(messages, model):
         json={"model": model, "messages": messages, "stream": True},
         stream=True,
     )
+    response.raise_for_status()
 
     full_reply = ""
     print("Assistant: ", end="", flush=True)
