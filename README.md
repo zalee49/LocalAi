@@ -113,3 +113,16 @@ Notebook outputs are saved in `.ipynb` files — they'll sync automatically.
 | 08 | [IMDB Sentiment](notebooks/05_projects/08_imdb_sentiment/imdb_sentiment.ipynb) | **NLP** | Movie review sentiment | 50k reviews |
 | 09 | [Text Generation](notebooks/05_projects/09_text_generation/text_generation.ipynb) | **NLP** | Shakespeare character-level LM | ~5MB text |
 | 10 | [Mini GPT](notebooks/05_projects/10_mini_gpt/mini_gpt.ipynb) | **Deep Learning** | GPT from scratch | ~5MB text |
+
+## Foundations
+
+A deeper-dive track that rebuilds the core machinery of ML and neural networks **from scratch** in pure NumPy — deriving every gradient by hand and verifying it (gradient checks + scikit-learn). Where the projects above *use* frameworks, these lessons explain *why they work*. Lessons are added one at a time.
+
+| # | Lesson | Builds from scratch | Status |
+|---|--------|---------------------|--------|
+| 01 | [Linear & Logistic Regression](notebooks/06_foundations/01_linear_logistic_from_scratch.ipynb) | model, MSE & cross-entropy, hand-derived gradients, gradient descent loop | ✅ |
+| 02 | Gradient Descent, deeply | loss surfaces, learning rate, SGD/mini-batch, momentum, Adam | planned |
+| 03 | The MLP & Backpropagation | hidden layers, the chain rule, a 2-layer net in NumPy | planned |
+| 04 | A tiny autograd engine | micrograd-style reverse-mode autodiff — *what `.backward()` does* | planned |
+| 05 | Training dynamics & generalization | overfitting, bias–variance, regularization, early stopping | planned |
+| 06 | What makes deep nets trainable | weight init, activations, normalization (in PyTorch) | planned |

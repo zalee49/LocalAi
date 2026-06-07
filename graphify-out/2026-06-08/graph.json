@@ -1,0 +1,912 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "minigpt_transformer_architecture",
+        "label": "MiniGPT Transformer Architecture",
+        "nodes": [
+          "formatted_mini_gpt_minigpt",
+          "formatted_mini_gpt_transformerblock",
+          "formatted_mini_gpt_multiheadattention",
+          "formatted_mini_gpt_feedforward",
+          "formatted_mini_gpt_positionalencoding"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "formatted_mini_gpt.json"
+      },
+      {
+        "id": "ollama_chat_repl_flow",
+        "label": "Ollama Terminal Chat REPL Flow",
+        "nodes": [
+          "scripts_ollama_chat_main",
+          "scripts_ollama_chat_check_ollama",
+          "scripts_ollama_chat_stream_chat",
+          "scripts_ollama_chat_ollama_http_api"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "scripts/ollama_chat.py"
+      },
+      {
+        "id": "cross_platform_setup",
+        "label": "Cross-Platform Setup (conda + device detection)",
+        "nodes": [
+          "environment_localai",
+          "setup_mac",
+          "setup_windows",
+          "claude_device_detection"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "formatted_mini_gpt.json",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": "L1",
+      "id": "formatted_mini_gpt",
+      "community": 5,
+      "norm_label": "formatted_mini_gpt.json"
+    },
+    {
+      "label": "ollama_chat.py",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "id": "scripts_ollama_chat",
+      "community": 2,
+      "norm_label": "ollama_chat.py"
+    },
+    {
+      "label": "check_ollama()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L22",
+      "id": "scripts_ollama_chat_check_ollama",
+      "community": 2,
+      "norm_label": "check_ollama()"
+    },
+    {
+      "label": "list_models()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L31",
+      "id": "scripts_ollama_chat_list_models",
+      "community": 2,
+      "norm_label": "list_models()"
+    },
+    {
+      "label": "stream_chat()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L49",
+      "id": "scripts_ollama_chat_stream_chat",
+      "community": 2,
+      "norm_label": "stream_chat()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L73",
+      "id": "scripts_ollama_chat_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Terminal chat interface for a local Ollama model.  Usage:     python ollama_chat",
+      "file_type": "rationale",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "id": "scripts_ollama_chat_rationale_1",
+      "community": 2,
+      "norm_label": "terminal chat interface for a local ollama model.  usage:     python ollama_chat"
+    },
+    {
+      "label": "Ollama HTTP API (localhost:11434)",
+      "file_type": "concept",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "scripts_ollama_chat_ollama_http_api",
+      "community": 2,
+      "norm_label": "ollama http api (localhost:11434)"
+    },
+    {
+      "label": "SelfAttention",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_selfattention",
+      "community": 1,
+      "norm_label": "selfattention"
+    },
+    {
+      "label": "MultiHeadAttention",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_multiheadattention",
+      "community": 1,
+      "norm_label": "multiheadattention"
+    },
+    {
+      "label": "FeedForward",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_feedforward",
+      "community": 1,
+      "norm_label": "feedforward"
+    },
+    {
+      "label": "TransformerBlock",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_transformerblock",
+      "community": 1,
+      "norm_label": "transformerblock"
+    },
+    {
+      "label": "PositionalEncoding",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_positionalencoding",
+      "community": 0,
+      "norm_label": "positionalencoding"
+    },
+    {
+      "label": "MiniGPT",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_minigpt",
+      "community": 0,
+      "norm_label": "minigpt"
+    },
+    {
+      "label": "CharDataset",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_chardataset",
+      "community": 4,
+      "norm_label": "chardataset"
+    },
+    {
+      "label": "generate_text",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_generate_text",
+      "community": 0,
+      "norm_label": "generate_text"
+    },
+    {
+      "label": "get_lr (warmup + cosine decay LR schedule)",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_get_lr",
+      "community": 6,
+      "norm_label": "get_lr (warmup + cosine decay lr schedule)"
+    },
+    {
+      "label": "Self-Attention (scaled dot-product)",
+      "file_type": "concept",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_self_attention_concept",
+      "community": 1,
+      "norm_label": "self-attention (scaled dot-product)"
+    },
+    {
+      "label": "Causal Masking",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_causal_masking",
+      "community": 1,
+      "norm_label": "causal masking"
+    },
+    {
+      "label": "Residual Connections + LayerNorm",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_residual_connection",
+      "community": 1,
+      "norm_label": "residual connections + layernorm"
+    },
+    {
+      "label": "Weight Tying (embedding / LM head)",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_weight_tying",
+      "community": 0,
+      "norm_label": "weight tying (embedding / lm head)"
+    },
+    {
+      "label": "Shakespeare Dataset (Project Gutenberg pg100)",
+      "file_type": "concept",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_shakespeare_dataset",
+      "community": 4,
+      "norm_label": "shakespeare dataset (project gutenberg pg100)"
+    },
+    {
+      "label": "Attention Is All You Need",
+      "file_type": "paper",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/1706.03762",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "formatted_mini_gpt_attention_is_all_you_need",
+      "community": 0,
+      "norm_label": "attention is all you need"
+    },
+    {
+      "label": "Mini GPT Project README",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "10_mini_gpt_readme",
+      "community": 0,
+      "norm_label": "mini gpt project readme"
+    },
+    {
+      "label": "nanoGPT (Karpathy)",
+      "file_type": "concept",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "source_url": "https://github.com/karpathy/nanoGPT",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "10_mini_gpt_readme_nanogpt",
+      "community": 0,
+      "norm_label": "nanogpt (karpathy)"
+    },
+    {
+      "label": "TRAINING_MODE toggle (quick/full)",
+      "file_type": "rationale",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "10_mini_gpt_readme_training_mode",
+      "community": 0,
+      "norm_label": "training_mode toggle (quick/full)"
+    },
+    {
+      "label": "Cross-Platform Device Detection (cuda/mps/cpu)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_device_detection",
+      "community": 3,
+      "norm_label": "cross-platform device detection (cuda/mps/cpu)"
+    },
+    {
+      "label": "localai Conda Environment Convention",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_localai_environment",
+      "community": 3,
+      "norm_label": "localai conda environment convention"
+    },
+    {
+      "label": "localai conda environment spec",
+      "file_type": "concept",
+      "source_file": "environment.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "environment_localai",
+      "community": 3,
+      "norm_label": "localai conda environment spec"
+    },
+    {
+      "label": "LocalAI Project README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme",
+      "community": 3,
+      "norm_label": "localai project readme"
+    },
+    {
+      "label": "Mac Setup Guide",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "setup_mac",
+      "community": 3,
+      "norm_label": "mac setup guide"
+    },
+    {
+      "label": "Windows Setup Guide",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "setup_windows",
+      "community": 3,
+      "norm_label": "windows setup guide"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_check_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_list_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_stream_chat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_rationale_1",
+      "target": "scripts_ollama_chat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_check_ollama",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_check_ollama"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_list_models",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_list_models"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_stream_chat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_stream_chat",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "scripts_ollama_chat_main"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_localai_environment",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_causal_masking"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_multiheadattention"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_self_attention_concept"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_multiheadattention",
+      "target": "formatted_mini_gpt_causal_masking"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_multiheadattention",
+      "target": "formatted_mini_gpt_self_attention_concept"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_multiheadattention"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_feedforward"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_transformerblock"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_residual_connection"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_positionalencoding"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_positionalencoding",
+      "target": "formatted_mini_gpt_attention_is_all_you_need"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "formatted_mini_gpt_minigpt"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_generate_text",
+      "target": "formatted_mini_gpt_minigpt"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "10_mini_gpt_readme_nanogpt"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "claude_device_detection"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_weight_tying"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_chardataset",
+      "target": "formatted_mini_gpt_shakespeare_dataset"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "formatted_mini_gpt_attention_is_all_you_need"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "10_mini_gpt_readme_nanogpt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "10_mini_gpt_readme_training_mode"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_device_detection",
+      "target": "setup_mac"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "setup/windows.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_device_detection",
+      "target": "setup_windows"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_localai_environment",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_mac",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "setup/windows.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_windows",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "setup_mac"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "setup_windows"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_mac",
+      "target": "setup_windows"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "minigpt_transformer_architecture",
+      "label": "MiniGPT Transformer Architecture",
+      "nodes": [
+        "formatted_mini_gpt_minigpt",
+        "formatted_mini_gpt_transformerblock",
+        "formatted_mini_gpt_multiheadattention",
+        "formatted_mini_gpt_feedforward",
+        "formatted_mini_gpt_positionalencoding"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json"
+    },
+    {
+      "id": "ollama_chat_repl_flow",
+      "label": "Ollama Terminal Chat REPL Flow",
+      "nodes": [
+        "scripts_ollama_chat_main",
+        "scripts_ollama_chat_check_ollama",
+        "scripts_ollama_chat_stream_chat",
+        "scripts_ollama_chat_ollama_http_api"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py"
+    },
+    {
+      "id": "cross_platform_setup",
+      "label": "Cross-Platform Setup (conda + device detection)",
+      "nodes": [
+        "environment_localai",
+        "setup_mac",
+        "setup_windows",
+        "claude_device_detection"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "35e7aef961d70c4b0c898f0f6dfa705c8e9f1444"
+}

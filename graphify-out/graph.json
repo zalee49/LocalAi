@@ -1,0 +1,2026 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "minigpt_transformer_architecture",
+        "label": "MiniGPT Transformer Architecture",
+        "nodes": [
+          "formatted_mini_gpt_minigpt",
+          "formatted_mini_gpt_transformerblock",
+          "formatted_mini_gpt_multiheadattention",
+          "formatted_mini_gpt_feedforward",
+          "formatted_mini_gpt_positionalencoding"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "formatted_mini_gpt.json"
+      },
+      {
+        "id": "ollama_chat_repl_flow",
+        "label": "Ollama Terminal Chat REPL Flow",
+        "nodes": [
+          "scripts_ollama_chat_main",
+          "scripts_ollama_chat_check_ollama",
+          "scripts_ollama_chat_stream_chat",
+          "scripts_ollama_chat_ollama_http_api"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "scripts/ollama_chat.py"
+      },
+      {
+        "id": "cross_platform_setup",
+        "label": "Cross-Platform Setup (conda + device detection)",
+        "nodes": [
+          "environment_localai",
+          "setup_mac",
+          "setup_windows",
+          "claude_device_detection"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "formatted_mini_gpt.json",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": "L1",
+      "id": "formatted_mini_gpt",
+      "community": 5,
+      "norm_label": "formatted_mini_gpt.json"
+    },
+    {
+      "label": "ollama_chat.py",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "id": "scripts_ollama_chat",
+      "community": 2,
+      "norm_label": "ollama_chat.py"
+    },
+    {
+      "label": "check_ollama()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L22",
+      "id": "scripts_ollama_chat_check_ollama",
+      "community": 2,
+      "norm_label": "check_ollama()"
+    },
+    {
+      "label": "list_models()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L31",
+      "id": "scripts_ollama_chat_list_models",
+      "community": 2,
+      "norm_label": "list_models()"
+    },
+    {
+      "label": "stream_chat()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L49",
+      "id": "scripts_ollama_chat_stream_chat",
+      "community": 2,
+      "norm_label": "stream_chat()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L73",
+      "id": "scripts_ollama_chat_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Terminal chat interface for a local Ollama model.  Usage:     python ollama_chat",
+      "file_type": "rationale",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "id": "scripts_ollama_chat_rationale_1",
+      "community": 2,
+      "norm_label": "terminal chat interface for a local ollama model.  usage:     python ollama_chat"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude",
+      "community": 12,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude_claude_md",
+      "community": 12,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Environment",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "id": "claude_environment",
+      "community": 12,
+      "norm_label": "environment"
+    },
+    {
+      "label": "Cross-Platform Rules",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L25",
+      "id": "claude_cross_platform_rules",
+      "community": 12,
+      "norm_label": "cross-platform rules"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L46",
+      "id": "claude_project_structure",
+      "community": 12,
+      "norm_label": "project structure"
+    },
+    {
+      "label": "Deep Learning Conventions",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L62",
+      "id": "claude_deep_learning_conventions",
+      "community": 12,
+      "norm_label": "deep learning conventions"
+    },
+    {
+      "label": "Local LLMs (Ollama)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L70",
+      "id": "claude_local_llms_ollama",
+      "community": 12,
+      "norm_label": "local llms (ollama)"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "LocalAI \u2014 AI Tinkering Project",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_localai_ai_tinkering_project",
+      "community": 8,
+      "norm_label": "localai \u2014 ai tinkering project"
+    },
+    {
+      "label": "Quick Start",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "id": "readme_quick_start",
+      "community": 8,
+      "norm_label": "quick start"
+    },
+    {
+      "label": "1. Install Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "id": "readme_1_install_prerequisites",
+      "community": 8,
+      "norm_label": "1. install prerequisites"
+    },
+    {
+      "label": "2. Create the Conda Environment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "id": "readme_2_create_the_conda_environment",
+      "community": 8,
+      "norm_label": "2. create the conda environment"
+    },
+    {
+      "label": "3. Launch JupyterLab",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "id": "readme_3_launch_jupyterlab",
+      "community": 8,
+      "norm_label": "3. launch jupyterlab"
+    },
+    {
+      "label": "4. Pull a Local LLM (Ollama)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "id": "readme_4_pull_a_local_llm_ollama",
+      "community": 8,
+      "norm_label": "4. pull a local llm (ollama)"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "id": "readme_project_structure",
+      "community": 8,
+      "norm_label": "project structure"
+    },
+    {
+      "label": "Syncing Between Machines",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L77",
+      "id": "readme_syncing_between_machines",
+      "community": 8,
+      "norm_label": "syncing between machines"
+    },
+    {
+      "label": "Learning Path (Suggested Order)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "id": "readme_learning_path_suggested_order",
+      "community": 8,
+      "norm_label": "learning path (suggested order)"
+    },
+    {
+      "label": "Projects",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "id": "readme_projects",
+      "community": 8,
+      "norm_label": "projects"
+    },
+    {
+      "label": "Foundations",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L117",
+      "id": "readme_foundations",
+      "community": 8,
+      "norm_label": "foundations"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L1",
+      "id": "10_mini_gpt_readme",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Project 10: Mini GPT (Transformer Language Model)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L1",
+      "id": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "community": 7,
+      "norm_label": "project 10: mini gpt (transformer language model)"
+    },
+    {
+      "label": "What You Will Build",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L7",
+      "id": "10_mini_gpt_readme_what_you_will_build",
+      "community": 7,
+      "norm_label": "what you will build"
+    },
+    {
+      "label": "Setup Instructions (Windows & macOS)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L21",
+      "id": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "community": 13,
+      "norm_label": "setup instructions (windows & macos)"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L23",
+      "id": "10_mini_gpt_readme_prerequisites",
+      "community": 13,
+      "norm_label": "prerequisites"
+    },
+    {
+      "label": "Option 1: Using conda (Recommended)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L28",
+      "id": "10_mini_gpt_readme_option_1_using_conda_recommended",
+      "community": 13,
+      "norm_label": "option 1: using conda (recommended)"
+    },
+    {
+      "label": "Option 2: Using pip (if you already have Python 3.11+)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L44",
+      "id": "10_mini_gpt_readme_option_2_using_pip_if_you_already_have_python_3_11",
+      "community": 13,
+      "norm_label": "option 2: using pip (if you already have python 3.11+)"
+    },
+    {
+      "label": "Running the Notebook",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L60",
+      "id": "10_mini_gpt_readme_running_the_notebook",
+      "community": 13,
+      "norm_label": "running the notebook"
+    },
+    {
+      "label": "Quick Start Summary",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L68",
+      "id": "10_mini_gpt_readme_quick_start_summary",
+      "community": 7,
+      "norm_label": "quick start summary"
+    },
+    {
+      "label": "Cross-Platform Notes",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L81",
+      "id": "10_mini_gpt_readme_cross_platform_notes",
+      "community": 7,
+      "norm_label": "cross-platform notes"
+    },
+    {
+      "label": "GPU Setup (Optional)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L93",
+      "id": "10_mini_gpt_readme_gpu_setup_optional",
+      "community": 7,
+      "norm_label": "gpu setup (optional)"
+    },
+    {
+      "label": "Windows with NVIDIA GPU",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L95",
+      "id": "10_mini_gpt_readme_windows_with_nvidia_gpu",
+      "community": 7,
+      "norm_label": "windows with nvidia gpu"
+    },
+    {
+      "label": "macOS with Apple Silicon (M1/M2/M3/M4)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L102",
+      "id": "10_mini_gpt_readme_macos_with_apple_silicon_m1_m2_m3_m4",
+      "community": 7,
+      "norm_label": "macos with apple silicon (m1/m2/m3/m4)"
+    },
+    {
+      "label": "Key Sections in the Notebook",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L108",
+      "id": "10_mini_gpt_readme_key_sections_in_the_notebook",
+      "community": 7,
+      "norm_label": "key sections in the notebook"
+    },
+    {
+      "label": "Improvements Over the Original Notebook",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L125",
+      "id": "10_mini_gpt_readme_improvements_over_the_original_notebook",
+      "community": 7,
+      "norm_label": "improvements over the original notebook"
+    },
+    {
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L141",
+      "id": "10_mini_gpt_readme_troubleshooting",
+      "community": 11,
+      "norm_label": "troubleshooting"
+    },
+    {
+      "label": "\"No module named 'torch'\"",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L143",
+      "id": "10_mini_gpt_readme_no_module_named_torch",
+      "community": 11,
+      "norm_label": "\"no module named 'torch'\""
+    },
+    {
+      "label": "\"No module named 'tqdm'\"",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L146",
+      "id": "10_mini_gpt_readme_no_module_named_tqdm",
+      "community": 11,
+      "norm_label": "\"no module named 'tqdm'\""
+    },
+    {
+      "label": "Training is too slow on CPU",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L149",
+      "id": "10_mini_gpt_readme_training_is_too_slow_on_cpu",
+      "community": 11,
+      "norm_label": "training is too slow on cpu"
+    },
+    {
+      "label": "MPS errors on macOS",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L152",
+      "id": "10_mini_gpt_readme_mps_errors_on_macos",
+      "community": 11,
+      "norm_label": "mps errors on macos"
+    },
+    {
+      "label": "Out of memory (CUDA)",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L155",
+      "id": "10_mini_gpt_readme_out_of_memory_cuda",
+      "community": 11,
+      "norm_label": "out of memory (cuda)"
+    },
+    {
+      "label": "Data download fails",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L158",
+      "id": "10_mini_gpt_readme_data_download_fails",
+      "community": 11,
+      "norm_label": "data download fails"
+    },
+    {
+      "label": "Comparison with Project 09",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L163",
+      "id": "10_mini_gpt_readme_comparison_with_project_09",
+      "community": 7,
+      "norm_label": "comparison with project 09"
+    },
+    {
+      "label": "Resources",
+      "file_type": "document",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L175",
+      "id": "10_mini_gpt_readme_resources",
+      "community": 7,
+      "norm_label": "resources"
+    },
+    {
+      "label": "mac.md",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L1",
+      "id": "setup_mac",
+      "community": 3,
+      "norm_label": "mac.md"
+    },
+    {
+      "label": "Mac Setup Guide",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L1",
+      "id": "setup_mac_mac_setup_guide",
+      "community": 9,
+      "norm_label": "mac setup guide"
+    },
+    {
+      "label": "1. Install Homebrew (if not already installed)",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L3",
+      "id": "setup_mac_1_install_homebrew_if_not_already_installed",
+      "community": 9,
+      "norm_label": "1. install homebrew (if not already installed)"
+    },
+    {
+      "label": "2. Install Miniconda",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L9",
+      "id": "setup_mac_2_install_miniconda",
+      "community": 9,
+      "norm_label": "2. install miniconda"
+    },
+    {
+      "label": "3. Install Git",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L23",
+      "id": "setup_mac_3_install_git",
+      "community": 9,
+      "norm_label": "3. install git"
+    },
+    {
+      "label": "4. Install Ollama",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L28",
+      "id": "setup_mac_4_install_ollama",
+      "community": 9,
+      "norm_label": "4. install ollama"
+    },
+    {
+      "label": "5. Create the Conda Environment",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L36",
+      "id": "setup_mac_5_create_the_conda_environment",
+      "community": 9,
+      "norm_label": "5. create the conda environment"
+    },
+    {
+      "label": "6. Apple Silicon (M1/M2/M3) \u2014 GPU Acceleration",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L45",
+      "id": "setup_mac_6_apple_silicon_m1_m2_m3_gpu_acceleration",
+      "community": 9,
+      "norm_label": "6. apple silicon (m1/m2/m3) \u2014 gpu acceleration"
+    },
+    {
+      "label": "7. Launch JupyterLab",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L58",
+      "id": "setup_mac_7_launch_jupyterlab",
+      "community": 9,
+      "norm_label": "7. launch jupyterlab"
+    },
+    {
+      "label": "8. Pull Your First LLM",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L65",
+      "id": "setup_mac_8_pull_your_first_llm",
+      "community": 9,
+      "norm_label": "8. pull your first llm"
+    },
+    {
+      "label": "Syncing with GitHub",
+      "file_type": "document",
+      "source_file": "setup/mac.md",
+      "source_location": "L78",
+      "id": "setup_mac_syncing_with_github",
+      "community": 9,
+      "norm_label": "syncing with github"
+    },
+    {
+      "label": "windows.md",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L1",
+      "id": "setup_windows",
+      "community": 3,
+      "norm_label": "windows.md"
+    },
+    {
+      "label": "Windows Setup Guide",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L1",
+      "id": "setup_windows_windows_setup_guide",
+      "community": 10,
+      "norm_label": "windows setup guide"
+    },
+    {
+      "label": "1. Install Miniconda",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L3",
+      "id": "setup_windows_1_install_miniconda",
+      "community": 10,
+      "norm_label": "1. install miniconda"
+    },
+    {
+      "label": "2. Install Git",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L11",
+      "id": "setup_windows_2_install_git",
+      "community": 10,
+      "norm_label": "2. install git"
+    },
+    {
+      "label": "3. Install Ollama",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L17",
+      "id": "setup_windows_3_install_ollama",
+      "community": 10,
+      "norm_label": "3. install ollama"
+    },
+    {
+      "label": "4. Create the Conda Environment",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L23",
+      "id": "setup_windows_4_create_the_conda_environment",
+      "community": 10,
+      "norm_label": "4. create the conda environment"
+    },
+    {
+      "label": "5. (Optional) Enable GPU Acceleration",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L34",
+      "id": "setup_windows_5_optional_enable_gpu_acceleration",
+      "community": 10,
+      "norm_label": "5. (optional) enable gpu acceleration"
+    },
+    {
+      "label": "6. Launch JupyterLab",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L45",
+      "id": "setup_windows_6_launch_jupyterlab",
+      "community": 10,
+      "norm_label": "6. launch jupyterlab"
+    },
+    {
+      "label": "7. Pull Your First LLM",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L52",
+      "id": "setup_windows_7_pull_your_first_llm",
+      "community": 10,
+      "norm_label": "7. pull your first llm"
+    },
+    {
+      "label": "Syncing with GitHub",
+      "file_type": "document",
+      "source_file": "setup/windows.md",
+      "source_location": "L64",
+      "id": "setup_windows_syncing_with_github",
+      "community": 10,
+      "norm_label": "syncing with github"
+    },
+    {
+      "label": "Ollama HTTP API (localhost:11434)",
+      "file_type": "concept",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "ollama http api (localhost:11434)",
+      "id": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "label": "SelfAttention",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "selfattention",
+      "id": "formatted_mini_gpt_selfattention"
+    },
+    {
+      "label": "MultiHeadAttention",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "multiheadattention",
+      "id": "formatted_mini_gpt_multiheadattention"
+    },
+    {
+      "label": "FeedForward",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "feedforward",
+      "id": "formatted_mini_gpt_feedforward"
+    },
+    {
+      "label": "TransformerBlock",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "transformerblock",
+      "id": "formatted_mini_gpt_transformerblock"
+    },
+    {
+      "label": "PositionalEncoding",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "positionalencoding",
+      "id": "formatted_mini_gpt_positionalencoding"
+    },
+    {
+      "label": "MiniGPT",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "minigpt",
+      "id": "formatted_mini_gpt_minigpt"
+    },
+    {
+      "label": "CharDataset",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "chardataset",
+      "id": "formatted_mini_gpt_chardataset"
+    },
+    {
+      "label": "generate_text",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "generate_text",
+      "id": "formatted_mini_gpt_generate_text"
+    },
+    {
+      "label": "get_lr (warmup + cosine decay LR schedule)",
+      "file_type": "code",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "get_lr (warmup + cosine decay lr schedule)",
+      "id": "formatted_mini_gpt_get_lr"
+    },
+    {
+      "label": "Self-Attention (scaled dot-product)",
+      "file_type": "concept",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "self-attention (scaled dot-product)",
+      "id": "formatted_mini_gpt_self_attention_concept"
+    },
+    {
+      "label": "Causal Masking",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "causal masking",
+      "id": "formatted_mini_gpt_causal_masking"
+    },
+    {
+      "label": "Residual Connections + LayerNorm",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "residual connections + layernorm",
+      "id": "formatted_mini_gpt_residual_connection"
+    },
+    {
+      "label": "Weight Tying (embedding / LM head)",
+      "file_type": "rationale",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "weight tying (embedding / lm head)",
+      "id": "formatted_mini_gpt_weight_tying"
+    },
+    {
+      "label": "Shakespeare Dataset (Project Gutenberg pg100)",
+      "file_type": "concept",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "shakespeare dataset (project gutenberg pg100)",
+      "id": "formatted_mini_gpt_shakespeare_dataset"
+    },
+    {
+      "label": "Attention Is All You Need",
+      "file_type": "paper",
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/1706.03762",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "attention is all you need",
+      "id": "formatted_mini_gpt_attention_is_all_you_need"
+    },
+    {
+      "label": "nanoGPT (Karpathy)",
+      "file_type": "concept",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "source_url": "https://github.com/karpathy/nanoGPT",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "nanogpt (karpathy)",
+      "id": "10_mini_gpt_readme_nanogpt"
+    },
+    {
+      "label": "TRAINING_MODE toggle (quick/full)",
+      "file_type": "rationale",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "training_mode toggle (quick/full)",
+      "id": "10_mini_gpt_readme_training_mode"
+    },
+    {
+      "label": "Cross-Platform Device Detection (cuda/mps/cpu)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "cross-platform device detection (cuda/mps/cpu)",
+      "id": "claude_device_detection"
+    },
+    {
+      "label": "localai Conda Environment Convention",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "localai conda environment convention",
+      "id": "claude_localai_environment"
+    },
+    {
+      "label": "localai conda environment spec",
+      "file_type": "concept",
+      "source_file": "environment.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "localai conda environment spec",
+      "id": "environment_localai"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_check_ollama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_list_models"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat",
+      "target": "scripts_ollama_chat_stream_chat"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_rationale_1",
+      "target": "scripts_ollama_chat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_check_ollama",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_check_ollama"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_list_models",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_list_models"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_ollama_chat_main",
+      "target": "scripts_ollama_chat_stream_chat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_ollama_chat_stream_chat",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "scripts_ollama_chat_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_claude_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_cross_platform_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_deep_learning_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_local_llms_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_localai_ai_tinkering_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "setup_mac"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme",
+      "target": "setup_windows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_foundations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_learning_path_suggested_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_projects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_quick_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "readme_localai_ai_tinkering_project",
+      "target": "readme_syncing_between_machines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_1_install_prerequisites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_2_create_the_conda_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_3_launch_jupyterlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "readme_quick_start",
+      "target": "readme_4_pull_a_local_llm_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "10_mini_gpt_readme_nanogpt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "10_mini_gpt_readme_training_mode"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "formatted_mini_gpt_attention_is_all_you_need"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme",
+      "target": "formatted_mini_gpt_minigpt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_comparison_with_project_09",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_cross_platform_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_gpu_setup_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_improvements_over_the_original_notebook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_key_sections_in_the_notebook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_quick_start_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_resources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_troubleshooting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_project_10_mini_gpt_transformer_language_model",
+      "target": "10_mini_gpt_readme_what_you_will_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "target": "10_mini_gpt_readme_option_1_using_conda_recommended",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "target": "10_mini_gpt_readme_option_2_using_pip_if_you_already_have_python_3_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "target": "10_mini_gpt_readme_prerequisites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_setup_instructions_windows_macos",
+      "target": "10_mini_gpt_readme_running_the_notebook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_gpu_setup_optional",
+      "target": "10_mini_gpt_readme_macos_with_apple_silicon_m1_m2_m3_m4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_gpu_setup_optional",
+      "target": "10_mini_gpt_readme_windows_with_nvidia_gpu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_data_download_fails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_mps_errors_on_macos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_no_module_named_torch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_no_module_named_tqdm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_out_of_memory_cuda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "10_mini_gpt_readme_troubleshooting",
+      "target": "10_mini_gpt_readme_training_is_too_slow_on_cpu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_device_detection",
+      "target": "setup_mac"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_mac",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "setup_mac",
+      "target": "setup_mac_mac_setup_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "setup/mac.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_mac",
+      "target": "setup_windows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_1_install_homebrew_if_not_already_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_2_install_miniconda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_3_install_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_4_install_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_5_create_the_conda_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_6_apple_silicon_m1_m2_m3_gpu_acceleration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_7_launch_jupyterlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_8_pull_your_first_llm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/mac.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "setup_mac_mac_setup_guide",
+      "target": "setup_mac_syncing_with_github",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "setup/windows.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_device_detection",
+      "target": "setup_windows"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "setup/windows.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "setup_windows",
+      "target": "environment_localai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "setup_windows",
+      "target": "setup_windows_windows_setup_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_1_install_miniconda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_2_install_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_3_install_ollama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_4_create_the_conda_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_5_optional_enable_gpu_acceleration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_6_launch_jupyterlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_7_pull_your_first_llm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup/windows.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "setup_windows_windows_setup_guide",
+      "target": "setup_windows_syncing_with_github",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_localai_environment",
+      "target": "scripts_ollama_chat_ollama_http_api"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_causal_masking"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_multiheadattention"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_selfattention",
+      "target": "formatted_mini_gpt_self_attention_concept"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_multiheadattention",
+      "target": "formatted_mini_gpt_causal_masking"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_multiheadattention",
+      "target": "formatted_mini_gpt_self_attention_concept"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_multiheadattention"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_feedforward"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_transformerblock"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_transformerblock",
+      "target": "formatted_mini_gpt_residual_connection"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_positionalencoding"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_positionalencoding",
+      "target": "formatted_mini_gpt_attention_is_all_you_need"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_generate_text",
+      "target": "formatted_mini_gpt_minigpt"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "notebooks/05_projects/10_mini_gpt/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "10_mini_gpt_readme_nanogpt"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "claude_device_detection"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_minigpt",
+      "target": "formatted_mini_gpt_weight_tying"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "formatted_mini_gpt.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "formatted_mini_gpt_chardataset",
+      "target": "formatted_mini_gpt_shakespeare_dataset"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_localai_environment",
+      "target": "environment_localai"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "minigpt_transformer_architecture",
+      "label": "MiniGPT Transformer Architecture",
+      "nodes": [
+        "formatted_mini_gpt_minigpt",
+        "formatted_mini_gpt_transformerblock",
+        "formatted_mini_gpt_multiheadattention",
+        "formatted_mini_gpt_feedforward",
+        "formatted_mini_gpt_positionalencoding"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "formatted_mini_gpt.json"
+    },
+    {
+      "id": "ollama_chat_repl_flow",
+      "label": "Ollama Terminal Chat REPL Flow",
+      "nodes": [
+        "scripts_ollama_chat_main",
+        "scripts_ollama_chat_check_ollama",
+        "scripts_ollama_chat_stream_chat",
+        "scripts_ollama_chat_ollama_http_api"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/ollama_chat.py"
+    },
+    {
+      "id": "cross_platform_setup",
+      "label": "Cross-Platform Setup (conda + device detection)",
+      "nodes": [
+        "environment_localai",
+        "setup_mac",
+        "setup_windows",
+        "claude_device_detection"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "35e7aef961d70c4b0c898f0f6dfa705c8e9f1444"
+}

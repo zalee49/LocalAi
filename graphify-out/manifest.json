@@ -1,0 +1,42 @@
+{
+  "formatted_mini_gpt.json": {
+    "mtime": 1780601671.4083166,
+    "ast_hash": "0acbc1fe5458ca3f3484add410cc62c9",
+    "semantic_hash": "0acbc1fe5458ca3f3484add410cc62c9"
+  },
+  "scripts/ollama_chat.py": {
+    "mtime": 1780601564.3343115,
+    "ast_hash": "23f5be63e9d940aea6dd56cddc94feb7",
+    "semantic_hash": "23f5be63e9d940aea6dd56cddc94feb7"
+  },
+  "CLAUDE.md": {
+    "mtime": 1779927833.3847818,
+    "ast_hash": "e7d3f24228f0acc2a6945a9827178e2b",
+    "semantic_hash": "e7d3f24228f0acc2a6945a9827178e2b"
+  },
+  "README.md": {
+    "mtime": 1780871274.5829532,
+    "ast_hash": "d4ce5caa2184d0d05818c2d4be9ef025",
+    "semantic_hash": ""
+  },
+  "environment.yml": {
+    "mtime": 1780601564.3223946,
+    "ast_hash": "33738b29d8703a441acac1ef76ac37ba",
+    "semantic_hash": "33738b29d8703a441acac1ef76ac37ba"
+  },
+  "notebooks/05_projects/10_mini_gpt/README.md": {
+    "mtime": 1780601671.4084916,
+    "ast_hash": "01c97cbd5976d0067310c47cc41b45c2",
+    "semantic_hash": "01c97cbd5976d0067310c47cc41b45c2"
+  },
+  "setup/mac.md": {
+    "mtime": 1779583833.9827232,
+    "ast_hash": "955d45c7acc0f87952b7212a3711ed33",
+    "semantic_hash": "955d45c7acc0f87952b7212a3711ed33"
+  },
+  "setup/windows.md": {
+    "mtime": 1779583833.9828084,
+    "ast_hash": "5aa2f7383bd47fe3c363cf8195df590c",
+    "semantic_hash": "5aa2f7383bd47fe3c363cf8195df590c"
+  }
+}
